@@ -21,8 +21,8 @@ const initiliazeAndListen = () => {
     const app = express()
       .use(morgan("dev"))
       .use(express.json())
-      .use("/api", require("./api/routes/index"))
       .use(cors())
+      .use("/api", require("./api/routes/index"))
       .listen(port, () => {
         console.log(`Listen on port: ${port}`);
       });

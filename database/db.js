@@ -1,6 +1,6 @@
 const { Sequelize } = require("sequelize");
 
-const connection = new Sequelize("restAPIDB", "alma", "reboot", {
+const connection = new Sequelize("restAPIDB", "vicente", "password", {
   host: "localhost",
   dialect: "mysql",
   port: 3306,
